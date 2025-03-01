@@ -24,8 +24,8 @@ export interface ProductsResponse {
   products: Product[];
 }
 
-// Get all products with optional pagination
-export const getProducts = async (
+// Fetch all products with optional pagination
+export const fetchProducts = async (
   page: number = 1,
   limit: number = 10
 ): Promise<ProductsResponse> => {
